@@ -34,67 +34,67 @@
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef DEMO_DATALOG_H
-#define DEMO_DATALOG_H
+//#ifndef DEMO_DATALOG_H
+//#define DEMO_DATALOG_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+//#ifdef __cplusplus
+//extern "C" {
+//#endif
 
-/* Includes ------------------------------------------------------------------*/
-/* Public types --------------------------------------------------------------*/
-/* Private defines -----------------------------------------------------------*/
-#define DATABYTE_LEN                  ((uint8_t)600)
+///* Includes ------------------------------------------------------------------*/
+///* Public types --------------------------------------------------------------*/
+///* Private defines -----------------------------------------------------------*/
+//#define DATABYTE_LEN                  ((uint8_t)600)
 
-#if (defined (USE_STM32F4XX_NUCLEO))
-#define FLASH_SECTOR                  FLASH_SECTOR_6
-#define FLASH_SECTOR_SIZE             (SIZE_FLASH_SECTOR_6)
-#define SIZE_FLASH_SECTOR_6           ((uint32_t)0x00020000)
+//#if (defined (USE_STM32F4XX_NUCLEO))
+//#define FLASH_SECTOR                  FLASH_SECTOR_6
+//#define FLASH_SECTOR_SIZE             (SIZE_FLASH_SECTOR_6)
+//#define SIZE_FLASH_SECTOR_6           ((uint32_t)0x00020000)
 
-#elif (defined (USE_STM32L0XX_NUCLEO))
-#define FLASH_SECTOR_SIZE             ((uint32_t)0x00001000)
+//#elif (defined (USE_STM32L0XX_NUCLEO))
+//#define FLASH_SECTOR_SIZE             ((uint32_t)0x00001000)
 
-#elif (defined (USE_STM32L1XX_NUCLEO))
-#define FLASH_SECTOR_SIZE             ((uint32_t)0x00020000) /* Size of sector 64 .. 95 */
+//#elif (defined (USE_STM32L1XX_NUCLEO))
+//#define FLASH_SECTOR_SIZE             ((uint32_t)0x00020000) /* Size of sector 64 .. 95 */
 
-#elif (defined (USE_STM32L4XX_NUCLEO))
-#define FLASH_SECTOR_SIZE             ((uint32_t)0x00020000)
+//#elif (defined (USE_STM32L4XX_NUCLEO))
+//#define FLASH_SECTOR_SIZE             ((uint32_t)0x00020000)
 
-#else
-#error Not supported platform
-#endif
+//#else
+//#error Not supported platform
+//#endif
 
-#define FLASH_ITEM_SIZE               8U
+//#define FLASH_ITEM_SIZE               8U
 
-/* Exported defines ----------------------------------------------------------*/
-#if (defined (USE_STM32F4XX_NUCLEO))
-#define FLASH_ADDRESS                 ((uint32_t)0x08040000)
+///* Exported defines ----------------------------------------------------------*/
+//#if (defined (USE_STM32F4XX_NUCLEO))
+//#define FLASH_ADDRESS                 ((uint32_t)0x08040000)
 
-#elif (defined (USE_STM32L0XX_NUCLEO))
-#define FLASH_ADDRESS                 ((uint32_t)0x0800F000) /* page 480 */
+//#elif (defined (USE_STM32L0XX_NUCLEO))
+//#define FLASH_ADDRESS                 ((uint32_t)0x0800F000) /* page 480 */
 
-#elif (defined (USE_STM32L1XX_NUCLEO))
-#define FLASH_ADDRESS                 ((uint32_t)0x08040000) /* page 1024 */
+//#elif (defined (USE_STM32L1XX_NUCLEO))
+//#define FLASH_ADDRESS                 ((uint32_t)0x08040000) /* page 1024 */
 
-#elif (defined (USE_STM32L4XX_NUCLEO))
-#define FLASH_ADDRESS                 ((uint32_t)0x080DF800) /* page 447 */
+//#elif (defined (USE_STM32L4XX_NUCLEO))
+//#define FLASH_ADDRESS                 ((uint32_t)0x080DF800) /* page 447 */
 
-#else
-#error Not supported platform
-#endif
+//#else
+//#error Not supported platform
+//#endif
 
-/* Public variables ----------------------------------------------------------*/
-/* Exported macro ------------------------------------------------------------*/
-/* Exported functions ------------------------------------------------------- */
-void SaveCalibrationToMemory(uint16_t DataSize, uint32_t *Data);
-void RecallCalibrationFromMemory(uint16_t DataSize, uint32_t *Data);
-void ResetCalibrationInMemory(void);
+///* Public variables ----------------------------------------------------------*/
+///* Exported macro ------------------------------------------------------------*/
+///* Exported functions ------------------------------------------------------- */
+//void SaveCalibrationToMemory(uint16_t DataSize, uint32_t *Data);
+//void RecallCalibrationFromMemory(uint16_t DataSize, uint32_t *Data);
+//void ResetCalibrationInMemory(void);
 
-#ifdef __cplusplus
-}
-#endif
+//#ifdef __cplusplus
+//}
+//#endif
 
-#endif /* DEMO_DATALOG_H */
+//#endif /* DEMO_DATALOG_H */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
