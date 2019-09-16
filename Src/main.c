@@ -204,31 +204,31 @@ int main(void)
   MotionFX_manager_MagCal_start(ALGO_PERIOD);
 
   /* Test if calibration data are available */
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)))
-  MFX_MagCal_output_t mag_cal_test;
-  MotionFX_MagCal_getParams(&mag_cal_test);
+//#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)))
+//  MFX_MagCal_output_t mag_cal_test;
+//  MotionFX_MagCal_getParams(&mag_cal_test);
 
-  /* If calibration data are available load HI coeficients */
-  if (mag_cal_test.cal_quality == MFX_MAGCALGOOD)
-#elif (defined (USE_STM32L0XX_NUCLEO))
-  MFX_CM0P_MagCal_output_t mag_cal_test;
-  MotionFX_CM0P_MagCal_getParams(&mag_cal_test);
+//  /* If calibration data are available load HI coeficients */
+//  if (mag_cal_test.cal_quality == MFX_MAGCALGOOD)
+//#elif (defined (USE_STM32L0XX_NUCLEO))
+//  MFX_CM0P_MagCal_output_t mag_cal_test;
+//  MotionFX_CM0P_MagCal_getParams(&mag_cal_test);
 
-  /* If calibration data are available load HI coeficients */
-  if (mag_cal_test.cal_quality == MFX_CM0P_MAGCALGOOD)
-#else
-#error Not supported platform
-#endif
-  {
-    ans_float = (mag_cal_test.hi_bias[0] * FROM_UT50_TO_MGAUSS);
-    MagOffset.x = (int32_t)ans_float;
-    ans_float = (mag_cal_test.hi_bias[1] * FROM_UT50_TO_MGAUSS);
-    MagOffset.y = (int32_t)ans_float;
-    ans_float = (mag_cal_test.hi_bias[2] * FROM_UT50_TO_MGAUSS);
-    MagOffset.z = (int32_t)ans_float;
+//  /* If calibration data are available load HI coeficients */
+//  if (mag_cal_test.cal_quality == MFX_CM0P_MAGCALGOOD)
+//#else
+//#error Not supported platform
+//#endif
+//  {
+//    ans_float = (mag_cal_test.hi_bias[0] * FROM_UT50_TO_MGAUSS);
+//    MagOffset.x = (int32_t)ans_float;
+//    ans_float = (mag_cal_test.hi_bias[1] * FROM_UT50_TO_MGAUSS);
+//    MagOffset.y = (int32_t)ans_float;
+//    ans_float = (mag_cal_test.hi_bias[2] * FROM_UT50_TO_MGAUSS);
+//    MagOffset.z = (int32_t)ans_float;
 
-    MagCalStatus = 1;
-  }
+//    MagCalStatus = 1;
+//  }
 HAL_TIM_Base_Start_IT(&AlgoTimHandle);
 	 MotionFX_manager_start_9X();
 	
@@ -242,24 +242,24 @@ HAL_TIM_Base_Start_IT(&AlgoTimHandle);
 //      }
 //    }
 
-    if (MagCalRequest == 1U)
-    {
-      MagCalRequest = 0;
+//    if (MagCalRequest == 1U)
+//    {
+//      MagCalRequest = 0;
 
-      /* Reset magnetometer calibration value*/
-      MagCalStatus = 0;
-      MagOffset.x = 0;
-      MagOffset.y = 0;
-      MagOffset.z = 0;
+//      /* Reset magnetometer calibration value*/
+//      MagCalStatus = 0;
+//      MagOffset.x = 0;
+//      MagOffset.y = 0;
+//      MagOffset.z = 0;
 
-//#if ((defined (MOTION_FX_STORE_CALIB_FLASH)) && ((defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32F4XX_NUCLEO))))
-//      /* Reset values in memory */
-//      ResetCalibrationInMemory();
-//#endif
+////#if ((defined (MOTION_FX_STORE_CALIB_FLASH)) && ((defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32F4XX_NUCLEO))))
+////      /* Reset values in memory */
+////      ResetCalibrationInMemory();
+////#endif
 
-      /* Enable magnetometer calibration */
-      MotionFX_manager_MagCal_start(ALGO_PERIOD);
-    }
+//      /* Enable magnetometer calibration */
+//      MotionFX_manager_MagCal_start(ALGO_PERIOD);
+//    }
 
     if (SensorReadRequest == 1U)
     {
@@ -350,7 +350,7 @@ static void MX_GPIO_Init(void)
   BSP_LED_Init(LED2);
 
   /* Initialize push button */
-  BSP_PB_Init(BUTTON_KEY, BUTTON_MODE_EXTI);
+ // BSP_PB_Init(BUTTON_KEY, BUTTON_MODE_EXTI);
 }
 
 /**
