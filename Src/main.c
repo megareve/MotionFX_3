@@ -309,8 +309,8 @@ static void Init_Sensors(void)
 	status = HAL_I2C_Mem_Write(&hi2c1, 0x3D, 0x60, I2C_MEMADD_SIZE_8BIT , data, 0x01, 100); // mag ODR = 20 Hz
 		data[0] = 0x01;
 	status = HAL_I2C_Mem_Write(&hi2c1, 0x3D, 0x62, I2C_MEMADD_SIZE_8BIT , data, 0x01, 100); // mag data ready interrupt enable	
-  (void)IKS01A2_ENV_SENSOR_Init(IKS01A2_HTS221_0, ENV_TEMPERATURE | ENV_HUMIDITY);
-  (void)IKS01A2_ENV_SENSOR_Init(IKS01A2_LPS22HB_0, ENV_PRESSURE);
+//  (void)IKS01A2_ENV_SENSOR_Init(IKS01A2_HTS221_0, ENV_TEMPERATURE | ENV_HUMIDITY);
+//  (void)IKS01A2_ENV_SENSOR_Init(IKS01A2_LPS22HB_0, ENV_PRESSURE);
 }
 
 //static void Init_Sensors(void)
