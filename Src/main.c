@@ -49,8 +49,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include <stdio.h>
 #include "main.h"
-#include "com.h"
-#include "DemoSerial.h"
+//#include "com.h"
+//#include "DemoSerial.h"
 #include "MotionFX_Manager.h"
 #include "i2c.h"
 /** @addtogroup MOTION_APPLICATIONS MOTION APPLICATIONS
@@ -76,6 +76,19 @@
 #define ACC_GYRO_ADDR 0xD7
 
 /* Extern variables ----------------------------------------------------------*/
+
+#ifdef USE_USB_OTG_HS
+#define TMsg_MaxLen             512
+#else
+#define TMsg_MaxLen             256
+#endif
+
+typedef struct
+{
+  uint32_t Len;
+  uint8_t Data[TMsg_MaxLen];
+} TMsg;
+
 volatile uint8_t DataLoggerActive = 0;
 extern int UseLSI;
 extern volatile uint32_t SensorsEnabled; /* This "redundant" line is here to fulfil MISRA C-2012 rule 8.4 */
@@ -170,7 +183,7 @@ int main(void)
   MotionFX_manager_get_version(lib_version, &lib_version_len);
 
   /* Initialize Communication Peripheral for data log */
-  USARTConfig();
+  //USARTConfig();
 
   /* RTC Initialization */
   RTC_Config();
@@ -468,43 +481,43 @@ static void FX_Data_Handler(TMsg *Msg)
         MotionFX_manager_run(pdata_in, pdata_out, MOTIONFX_ENGINE_DELTATIME);
         BSP_LED_Off(LED2);
 
-        if (Enabled6X == 1U)
-        {
-          (void)memcpy(&Msg->Data[55], (void *)pdata_out->quaternion_6X, 4U * sizeof(float));
-          (void)memcpy(&Msg->Data[71], (void *)pdata_out->rotation_6X, 3U * sizeof(float));
-          (void)memcpy(&Msg->Data[83], (void *)pdata_out->gravity_6X, 3U * sizeof(float));
-          (void)memcpy(&Msg->Data[95], (void *)pdata_out->linear_acceleration_6X, 3U * sizeof(float));
+//        if (Enabled6X == 1U)
+//        {
+//          (void)memcpy(&Msg->Data[55], (void *)pdata_out->quaternion_6X, 4U * sizeof(float));
+//          (void)memcpy(&Msg->Data[71], (void *)pdata_out->rotation_6X, 3U * sizeof(float));
+//          (void)memcpy(&Msg->Data[83], (void *)pdata_out->gravity_6X, 3U * sizeof(float));
+//          (void)memcpy(&Msg->Data[95], (void *)pdata_out->linear_acceleration_6X, 3U * sizeof(float));
 
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)))
-          (void)memcpy(&Msg->Data[107], (void *) & (pdata_out->heading_6X), sizeof(float));
-          (void)memcpy(&Msg->Data[111], (void *) & (pdata_out->headingErr_6X), sizeof(float));
-#elif (defined (USE_STM32L0XX_NUCLEO))
-          (void)memset(&Msg->Data[107], 0, sizeof(float));
-          (void)memset(&Msg->Data[111], 0, sizeof(float));
-#else
-#error Not supported platform
-#endif
-        }
-        else
-        {
-          (void)memcpy(&Msg->Data[55], (void *)pdata_out->quaternion_9X, 4U * sizeof(float));
-          (void)memcpy(&Msg->Data[71], (void *)pdata_out->rotation_9X, 3U * sizeof(float));
-          (void)memcpy(&Msg->Data[83], (void *)pdata_out->gravity_9X, 3U * sizeof(float));
-          (void)memcpy(&Msg->Data[95], (void *)pdata_out->linear_acceleration_9X, 3U * sizeof(float));
+//#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)))
+//          (void)memcpy(&Msg->Data[107], (void *) & (pdata_out->heading_6X), sizeof(float));
+//          (void)memcpy(&Msg->Data[111], (void *) & (pdata_out->headingErr_6X), sizeof(float));
+//#elif (defined (USE_STM32L0XX_NUCLEO))
+//          (void)memset(&Msg->Data[107], 0, sizeof(float));
+//          (void)memset(&Msg->Data[111], 0, sizeof(float));
+//#else
+//#error Not supported platform
+//#endif
+//        }
+//        else
+//        {
+//          (void)memcpy(&Msg->Data[55], (void *)pdata_out->quaternion_9X, 4U * sizeof(float));
+//          (void)memcpy(&Msg->Data[71], (void *)pdata_out->rotation_9X, 3U * sizeof(float));
+//          (void)memcpy(&Msg->Data[83], (void *)pdata_out->gravity_9X, 3U * sizeof(float));
+//          (void)memcpy(&Msg->Data[95], (void *)pdata_out->linear_acceleration_9X, 3U * sizeof(float));
 
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)))
-          (void)memcpy(&Msg->Data[107], (void *) & (pdata_out->heading_9X), sizeof(float));
-          (void)memcpy(&Msg->Data[111], (void *) & (pdata_out->headingErr_9X), sizeof(float));
-#elif (defined (USE_STM32L0XX_NUCLEO))
-          (void)memset(&Msg->Data[107], 0, sizeof(float));
-          (void)memset(&Msg->Data[111], 0, sizeof(float));
-#else
-#error Not supported platform
-#endif
+//#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)))
+//          (void)memcpy(&Msg->Data[107], (void *) & (pdata_out->heading_9X), sizeof(float));
+//          (void)memcpy(&Msg->Data[111], (void *) & (pdata_out->headingErr_9X), sizeof(float));
+//#elif (defined (USE_STM32L0XX_NUCLEO))
+//          (void)memset(&Msg->Data[107], 0, sizeof(float));
+//          (void)memset(&Msg->Data[111], 0, sizeof(float));
+//#else
+//#error Not supported platform
+//#endif
 //        }
 //      }
 //    }
-  }
+//  }
 }
 
 /**

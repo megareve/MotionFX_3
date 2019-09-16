@@ -61,10 +61,6 @@
 .\stm32f4xx-nucleo-iks01a2\objects\main.o: ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr\lsm303agr.h
 .\stm32f4xx-nucleo-iks01a2\objects\main.o: ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr\lsm303agr_reg.h
 .\stm32f4xx-nucleo-iks01a2\objects\main.o: ..\..\..\..\..\..\Drivers\BSP\IKS01A2\iks01a2_motion_sensors_ex.h
-.\stm32f4xx-nucleo-iks01a2\objects\main.o: ..\Inc\com.h
-.\stm32f4xx-nucleo-iks01a2\objects\main.o: ..\Inc\serial_protocol.h
-.\stm32f4xx-nucleo-iks01a2\objects\main.o: ..\Inc\DemoSerial.h
-.\stm32f4xx-nucleo-iks01a2\objects\main.o: ..\Inc\Serial_CMD.h
 .\stm32f4xx-nucleo-iks01a2\objects\main.o: ..\Inc\MotionFX_Manager.h
 .\stm32f4xx-nucleo-iks01a2\objects\main.o: ..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc\motion_fx.h
 .\stm32f4xx-nucleo-iks01a2\objects\main.o: ..\User\i2c.h
