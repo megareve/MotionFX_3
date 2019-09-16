@@ -152,9 +152,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>623</LineNumber>
+          <LineNumber>626</LineNumber>
           <EnabledFlag>0</EnabledFlag>
-          <Address>134274662</Address>
+          <Address>134274656</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -163,14 +163,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\STM32F4xx_Nucleo_IKS01A2\../Src/main.c\623</Expression>
+          <Expression>\\STM32F4xx_Nucleo_IKS01A2\../Src/main.c\626</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>644</LineNumber>
+          <LineNumber>647</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134274764</Address>
+          <Address>134274758</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -179,12 +179,12 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\STM32F4xx_Nucleo_IKS01A2\../Src/main.c\644</Expression>
+          <Expression>\\STM32F4xx_Nucleo_IKS01A2\../Src/main.c\647</Expression>
         </Bp>
         <Bp>
           <Number>2</Number>
           <Type>0</Type>
-          <LineNumber>566</LineNumber>
+          <LineNumber>569</LineNumber>
           <EnabledFlag>0</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -389,7 +389,7 @@
 
   <Group>
     <GroupName>Drivers/BSP/STM32F4xx-Nucleo</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

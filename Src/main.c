@@ -89,6 +89,9 @@ typedef struct
   uint8_t Data[TMsg_MaxLen];
 } TMsg;
 
+
+
+
 volatile uint8_t DataLoggerActive = 0;
 extern int UseLSI;
 extern volatile uint32_t SensorsEnabled; /* This "redundant" line is here to fulfil MISRA C-2012 rule 8.4 */
@@ -123,9 +126,9 @@ static void MX_CRC_Init(void);
 static void MX_TIM_ALGO_Init(void);
 static void RTC_Handler(TMsg *Msg);
 static void FX_Data_Handler(TMsg *Msg);
-static void Accelero_Sensor_Handler(TMsg *Msg, uint32_t Instance);
-static void Gyro_Sensor_Handler(TMsg *Msg, uint32_t Instance);
-static void Magneto_Sensor_Handler(TMsg *Msg, uint32_t Instance);
+static void Accelero_Sensor_Handler(TMsg *Msg); //, uint32_t Instance);
+static void Gyro_Sensor_Handler(TMsg *Msg); //, uint32_t Instance);
+static void Magneto_Sensor_Handler(TMsg *Msg); //, uint32_t Instance);
 //static void Pressure_Sensor_Handler(TMsg *Msg, uint32_t Instance);
 //static void Humidity_Sensor_Handler(TMsg *Msg, uint32_t Instance);
 //static void Temperature_Sensor_Handler(TMsg *Msg, uint32_t Instance);
@@ -264,9 +267,9 @@ HAL_TIM_Base_Start_IT(&AlgoTimHandle);
 
       /* Acquire data from enabled sensors and fill Msg stream */
       //RTC_Handler(&msg_dat);
-      Accelero_Sensor_Handler(&msg_dat, IKS01A2_LSM6DSL_0);
-      Gyro_Sensor_Handler(&msg_dat, IKS01A2_LSM6DSL_0);
-      Magneto_Sensor_Handler(&msg_dat, IKS01A2_LSM303AGR_MAG_0);
+      Accelero_Sensor_Handler(&msg_dat); //, IKS01A2_LSM6DSL_0);
+      Gyro_Sensor_Handler(&msg_dat); //, IKS01A2_LSM6DSL_0);
+      Magneto_Sensor_Handler(&msg_dat); //, IKS01A2_LSM303AGR_MAG_0);
 //      Humidity_Sensor_Handler(&msg_dat, IKS01A2_HTS221_0);
 //      Temperature_Sensor_Handler(&msg_dat, IKS01A2_HTS221_0);
 //      Pressure_Sensor_Handler(&msg_dat, IKS01A2_LPS22HB_0);
@@ -412,30 +415,30 @@ static void MX_TIM_ALGO_Init(void)
  * @param  Msg the time+date part of the stream
  * @retval None
  */
-static void RTC_Handler(TMsg *Msg)
-{
-  uint8_t sub_sec;
-  uint32_t ans_uint32;
-  int32_t ans_int32;
-  RTC_DateTypeDef sdatestructureget;
-  RTC_TimeTypeDef stimestructure;
+//static void RTC_Handler(TMsg *Msg)
+//{
+//  uint8_t sub_sec;
+//  uint32_t ans_uint32;
+//  int32_t ans_int32;
+//  RTC_DateTypeDef sdatestructureget;
+//  RTC_TimeTypeDef stimestructure;
 
-  (void)HAL_RTC_GetTime(&RtcHandle, &stimestructure, FORMAT_BIN);
-  (void)HAL_RTC_GetDate(&RtcHandle, &sdatestructureget, FORMAT_BIN);
+//  (void)HAL_RTC_GetTime(&RtcHandle, &stimestructure, FORMAT_BIN);
+//  (void)HAL_RTC_GetDate(&RtcHandle, &sdatestructureget, FORMAT_BIN);
 
-  /* To be MISRA C-2012 compliant the original calculation:
-     sub_sec = ((((((int)RtcSynchPrediv) - ((int)stimestructure.SubSeconds)) * 100) / (RtcSynchPrediv + 1)) & 0xFF);
-     has been split to separate expressions */
-  ans_int32 = (RtcSynchPrediv - (int32_t)stimestructure.SubSeconds) * 100;
-  ans_int32 /= RtcSynchPrediv + 1;
-  ans_uint32 = (uint32_t)ans_int32 & 0xFFU;
-  sub_sec = (uint8_t)ans_uint32;
+//  /* To be MISRA C-2012 compliant the original calculation:
+//     sub_sec = ((((((int)RtcSynchPrediv) - ((int)stimestructure.SubSeconds)) * 100) / (RtcSynchPrediv + 1)) & 0xFF);
+//     has been split to separate expressions */
+//  ans_int32 = (RtcSynchPrediv - (int32_t)stimestructure.SubSeconds) * 100;
+//  ans_int32 /= RtcSynchPrediv + 1;
+//  ans_uint32 = (uint32_t)ans_int32 & 0xFFU;
+//  sub_sec = (uint8_t)ans_uint32;
 
-  Msg->Data[3] = (uint8_t)stimestructure.Hours;
-  Msg->Data[4] = (uint8_t)stimestructure.Minutes;
-  Msg->Data[5] = (uint8_t)stimestructure.Seconds;
-  Msg->Data[6] = sub_sec;
-}
+//  Msg->Data[3] = (uint8_t)stimestructure.Hours;
+//  Msg->Data[4] = (uint8_t)stimestructure.Minutes;
+//  Msg->Data[5] = (uint8_t)stimestructure.Seconds;
+//  Msg->Data[6] = sub_sec;
+//}
 
 /**
  * @brief  Sensor Fusion data handler
@@ -526,7 +529,7 @@ static void FX_Data_Handler(TMsg *Msg)
  * @param  Instance the device instance
  * @retval None
  */
-static void Accelero_Sensor_Handler(TMsg *Msg, uint32_t Instance)
+static void Accelero_Sensor_Handler(TMsg *Msg) //, uint32_t Instance)
 {
 //  if ((SensorsEnabled & ACCELEROMETER_SENSOR) == ACCELEROMETER_SENSOR)
 //  {
@@ -559,7 +562,7 @@ static void Accelero_Sensor_Handler(TMsg *Msg, uint32_t Instance)
  * @param  Instance the device instance
  * @retval None
  */
-static void Gyro_Sensor_Handler(TMsg *Msg, uint32_t Instance)
+static void Gyro_Sensor_Handler(TMsg *Msg) //, uint32_t Instance)
 {
 //  if ((SensorsEnabled & GYROSCOPE_SENSOR) == GYROSCOPE_SENSOR)
 //  {
@@ -589,7 +592,7 @@ a=(data[1] << 8)|data[0];
  * @param  Instance the device instance
  * @retval None
  */
-static void Magneto_Sensor_Handler(TMsg *Msg, uint32_t Instance)
+static void Magneto_Sensor_Handler(TMsg *Msg) //, uint32_t Instance)
 {
   float ans_float;
 #if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)))
@@ -881,16 +884,16 @@ void Error_Handler(void)
  * @param  GPIOPin the pin connected to EXTI line
  * @retval None
  */
-void HAL_GPIO_EXTI_Callback(uint16_t GPIOPin)
-{
-  if (GPIOPin == KEY_BUTTON_PIN)
-  {
-    if (BSP_PB_GetState(BUTTON_KEY) == (uint32_t)GPIO_PIN_RESET)
-    {
-      MagCalRequest = 1;
-    }
-  }
-}
+//void HAL_GPIO_EXTI_Callback(uint16_t GPIOPin)
+//{
+//  if (GPIOPin == KEY_BUTTON_PIN)
+//  {
+//    if (BSP_PB_GetState(BUTTON_KEY) == (uint32_t)GPIO_PIN_RESET)
+//    {
+//      MagCalRequest = 1;
+//    }
+//  }
+//}
 
 /**
  * @brief  Period elapsed callback

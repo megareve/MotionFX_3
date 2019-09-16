@@ -42,12 +42,3 @@
 .\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o: ..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo\stm32f4xx_nucleo.h
 .\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o: ..\Inc\nucleo_f401re_bus.h
 .\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o: ..\Inc\nucleo_f401re_errno.h
-.\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o: ..\..\..\..\..\..\Drivers\BSP\IKS01A2\iks01a2_motion_sensors.h
-.\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o: ..\Inc\iks01a2_conf.h
-.\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o: ..\..\..\..\..\..\Drivers\BSP\Components\Common\motion_sensor.h
-.\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o: ..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl\lsm6dsl.h
-.\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o: ..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl\lsm6dsl_reg.h
-.\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
-.\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o: ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr\lsm303agr.h
-.\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o: ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr\lsm303agr_reg.h
