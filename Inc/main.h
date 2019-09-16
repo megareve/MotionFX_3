@@ -95,8 +95,8 @@ extern "C" {
 
 /* Exported functions --------------------------------------------------------*/
 void Error_Handler(void);
-void RTC_DateRegulate(uint8_t y, uint8_t m, uint8_t d, uint8_t dw);
-void RTC_TimeRegulate(uint8_t hh, uint8_t mm, uint8_t ss);
+//void RTC_DateRegulate(uint8_t y, uint8_t m, uint8_t d, uint8_t dw);
+//void RTC_TimeRegulate(uint8_t hh, uint8_t mm, uint8_t ss);
 
 #ifdef __cplusplus
 }

@@ -249,10 +249,10 @@ HAL_TIM_Base_Start_IT(&AlgoTimHandle);
       MagOffset.y = 0;
       MagOffset.z = 0;
 
-#if ((defined (MOTION_FX_STORE_CALIB_FLASH)) && ((defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32F4XX_NUCLEO))))
-      /* Reset values in memory */
-      ResetCalibrationInMemory();
-#endif
+//#if ((defined (MOTION_FX_STORE_CALIB_FLASH)) && ((defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32F4XX_NUCLEO))))
+//      /* Reset values in memory */
+//      ResetCalibrationInMemory();
+//#endif
 
       /* Enable magnetometer calibration */
       MotionFX_manager_MagCal_start(ALGO_PERIOD);
@@ -818,47 +818,47 @@ static void RTC_TimeStampConfig(void)
  * @param  dw the day-week value to be set
  * @retval None
  */
-void RTC_DateRegulate(uint8_t y, uint8_t m, uint8_t d, uint8_t dw)
-{
-  RTC_DateTypeDef sdatestructure;
+//void RTC_DateRegulate(uint8_t y, uint8_t m, uint8_t d, uint8_t dw)
+//{
+//  RTC_DateTypeDef sdatestructure;
 
-  sdatestructure.Year = y;
-  sdatestructure.Month = m;
-  sdatestructure.Date = d;
-  sdatestructure.WeekDay = dw;
+//  sdatestructure.Year = y;
+//  sdatestructure.Month = m;
+//  sdatestructure.Date = d;
+//  sdatestructure.WeekDay = dw;
 
-  if (HAL_RTC_SetDate(&RtcHandle, &sdatestructure, FORMAT_BIN) != HAL_OK)
-  {
-    /* Initialization Error */
-    Error_Handler();
-  }
-}
+//  if (HAL_RTC_SetDate(&RtcHandle, &sdatestructure, FORMAT_BIN) != HAL_OK)
+//  {
+//    /* Initialization Error */
+//    Error_Handler();
+//  }
+//}
 
-/**
- * @brief  Configures the current time
- * @param  hh the hour value to be set
- * @param  mm the minute value to be set
- * @param  ss the second value to be set
- * @retval None
- */
-void RTC_TimeRegulate(uint8_t hh, uint8_t mm, uint8_t ss)
-{
-  RTC_TimeTypeDef stimestructure;
+///**
+// * @brief  Configures the current time
+// * @param  hh the hour value to be set
+// * @param  mm the minute value to be set
+// * @param  ss the second value to be set
+// * @retval None
+// */
+//void RTC_TimeRegulate(uint8_t hh, uint8_t mm, uint8_t ss)
+//{
+//  RTC_TimeTypeDef stimestructure;
 
-  stimestructure.TimeFormat = RTC_HOURFORMAT12_AM;
-  stimestructure.Hours = hh;
-  stimestructure.Minutes = mm;
-  stimestructure.Seconds = ss;
-  stimestructure.SubSeconds = 0;
-  stimestructure.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
-  stimestructure.StoreOperation = RTC_STOREOPERATION_RESET;
+//  stimestructure.TimeFormat = RTC_HOURFORMAT12_AM;
+//  stimestructure.Hours = hh;
+//  stimestructure.Minutes = mm;
+//  stimestructure.Seconds = ss;
+//  stimestructure.SubSeconds = 0;
+//  stimestructure.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+//  stimestructure.StoreOperation = RTC_STOREOPERATION_RESET;
 
-  if (HAL_RTC_SetTime(&RtcHandle, &stimestructure, FORMAT_BIN) != HAL_OK)
-  {
-    /* Initialization Error */
-    Error_Handler();
-  }
-}
+//  if (HAL_RTC_SetTime(&RtcHandle, &stimestructure, FORMAT_BIN) != HAL_OK)
+//  {
+//    /* Initialization Error */
+//    Error_Handler();
+//  }
+//}
 
 /**
  * @brief  This function is executed in case of error occurrence
