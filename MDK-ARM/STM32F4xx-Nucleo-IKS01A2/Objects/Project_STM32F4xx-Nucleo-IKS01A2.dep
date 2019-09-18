@@ -118,7 +118,7 @@ I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5C6
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5C6C0DAF)
-I (..\Inc\nucleo_f401re_bus.h)(0x5C6C0D6D)
+I (..\Inc\nucleo_f401re_bus.h)(0x5D7F85C4)
 I (..\Inc\nucleo_f401re_errno.h)(0x5C6C0D6D)
 I (..\..\..\..\..\..\Drivers\BSP\Components\Common\env_sensor.h)(0x5C6C0D77)
 I (..\..\..\..\..\..\Drivers\BSP\Components\lps22hb\lps22hb.h)(0x5C6C0D81)
@@ -168,7 +168,7 @@ I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5C6
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5C6C0DAF)
-I (..\Inc\nucleo_f401re_bus.h)(0x5C6C0D6D)
+I (..\Inc\nucleo_f401re_bus.h)(0x5D7F85C4)
 I (..\Inc\nucleo_f401re_errno.h)(0x5C6C0D6D)
 I (..\..\..\..\..\..\Drivers\BSP\Components\Common\env_sensor.h)(0x5C6C0D77)
 I (..\..\..\..\..\..\Drivers\BSP\Components\lps22hb\lps22hb.h)(0x5C6C0D81)
@@ -217,7 +217,7 @@ I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5C6
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5C6C0DAF)
-I (..\Inc\nucleo_f401re_bus.h)(0x5C6C0D6D)
+I (..\Inc\nucleo_f401re_bus.h)(0x5D7F85C4)
 I (..\Inc\nucleo_f401re_errno.h)(0x5C6C0D6D)
 I (..\..\..\..\..\..\Drivers\BSP\Components\Common\motion_sensor.h)(0x5C6C0D77)
 I (..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl\lsm6dsl.h)(0x5CECE6D4)
@@ -267,7 +267,7 @@ I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5C6
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5C6C0DAF)
-I (..\Inc\nucleo_f401re_bus.h)(0x5C6C0D6D)
+I (..\Inc\nucleo_f401re_bus.h)(0x5D7F85C4)
 I (..\Inc\nucleo_f401re_errno.h)(0x5C6C0D6D)
 I (..\..\..\..\..\..\Drivers\BSP\Components\Common\motion_sensor.h)(0x5C6C0D77)
 I (..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl\lsm6dsl.h)(0x5CECE6D4)
@@ -319,7 +319,7 @@ F (..\Src\DemoSerial.c)(0x5D7F508C)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 -O
 F (..\Src\com.c)(0x5D7F50F1)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo -I ..\..\..\..\..\..\Drivers\BSP\Components\Common -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\BSP\Components\hts221 -I ..\..\..\..\..\..\Drivers\BSP\Components\lps22hb -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr -I ..\..\..\..\..\..\Drivers\BSP\IKS01A2 -I ..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc -I ..\User --C99-I.\RTE\_STM32F4xx-Nucleo-IKS01A2-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F401xE -DSTM32F401xE -DUSE_HAL_DRIVER -DUSE_STM32F4XX_NUCLEO -DUSE_IKS01A2 --C99-o .\stm32f4xx-nucleo-iks01a2\objects\com.o --depend .\stm32f4xx-nucleo-iks01a2\objects\com.d)
 F (..\Src\main.c)(0x5D7F67B2)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo -I ..\..\..\..\..\..\Drivers\BSP\Components\Common -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\BSP\Components\hts221 -I ..\..\..\..\..\..\Drivers\BSP\Components\lps22hb -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr -I ..\..\..\..\..\..\Drivers\BSP\IKS01A2 -I ..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc -I ..\User --C99-I.\RTE\_STM32F4xx-Nucleo-IKS01A2-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F401xE -DSTM32F401xE -DUSE_HAL_DRIVER -DUSE_STM32F4XX_NUCLEO -DUSE_IKS01A2 --C99-o .\stm32f4xx-nucleo-iks01a2\objects\main.o --depend .\stm32f4xx-nucleo-iks01a2\objects\main.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F2F9C)
-I (..\Inc\main.h)(0x5D7F5EC1)
+I (..\Inc\main.h)(0x5D7F81CD)
 I (..\Inc\cube_hal.h)(0x5C6C0D6D)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5C6C0DAF)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5C6C0D6D)
@@ -359,14 +359,12 @@ I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5C6
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo\stm32f4xx_nucleo.h)(0x5C6C0D93)
-I (..\Inc\nucleo_f401re_bus.h)(0x5C6C0D6D)
-I (..\Inc\nucleo_f401re_errno.h)(0x5C6C0D6D)
 I (..\Inc\MotionFX_Manager.h)(0x5C6C0D6D)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F2F9C)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc\motion_fx.h)(0x5C6C0DD2)
 I (..\User\i2c.h)(0x5D726FDC)
 F (..\Src\stm32f4xx_hal_msp.c)(0x5D7CFD77)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo -I ..\..\..\..\..\..\Drivers\BSP\Components\Common -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\BSP\Components\hts221 -I ..\..\..\..\..\..\Drivers\BSP\Components\lps22hb -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr -I ..\..\..\..\..\..\Drivers\BSP\IKS01A2 -I ..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc -I ..\User --C99-I.\RTE\_STM32F4xx-Nucleo-IKS01A2-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F401xE -DSTM32F401xE -DUSE_HAL_DRIVER -DUSE_STM32F4XX_NUCLEO -DUSE_IKS01A2 --C99-o .\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.o --depend .\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal_msp.d)
-I (..\Inc\main.h)(0x5D7F5EC1)
+I (..\Inc\main.h)(0x5D7F81CD)
 I (..\Inc\cube_hal.h)(0x5C6C0D6D)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5C6C0DAF)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5C6C0D6D)
@@ -406,8 +404,6 @@ I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5C6
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo\stm32f4xx_nucleo.h)(0x5C6C0D93)
-I (..\Inc\nucleo_f401re_bus.h)(0x5C6C0D6D)
-I (..\Inc\nucleo_f401re_errno.h)(0x5C6C0D6D)
 F (..\Src\cube_hal_f4.c)(0x5C6C0D6D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo -I ..\..\..\..\..\..\Drivers\BSP\Components\Common -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\BSP\Components\hts221 -I ..\..\..\..\..\..\Drivers\BSP\Components\lps22hb -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr -I ..\..\..\..\..\..\Drivers\BSP\IKS01A2 -I ..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc -I ..\User --C99-I.\RTE\_STM32F4xx-Nucleo-IKS01A2-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F401xE -DSTM32F401xE -DUSE_HAL_DRIVER -DUSE_STM32F4XX_NUCLEO -DUSE_IKS01A2 --C99-o .\stm32f4xx-nucleo-iks01a2\objects\cube_hal_f4.o --depend .\stm32f4xx-nucleo-iks01a2\objects\cube_hal_f4.d)
 I (..\Inc\cube_hal.h)(0x5C6C0D6D)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5C6C0DAF)
@@ -451,7 +447,7 @@ I (..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo\stm32f4xx_nucleo.h)(0x5C6C0D93
 I (..\Inc\com.h)(0x5D7F50B2)
 F (..\Src\stm32f4xx_it.c)(0x5C6C0D6D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo -I ..\..\..\..\..\..\Drivers\BSP\Components\Common -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\BSP\Components\hts221 -I ..\..\..\..\..\..\Drivers\BSP\Components\lps22hb -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr -I ..\..\..\..\..\..\Drivers\BSP\IKS01A2 -I ..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc -I ..\User --C99-I.\RTE\_STM32F4xx-Nucleo-IKS01A2-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F401xE -DSTM32F401xE -DUSE_HAL_DRIVER -DUSE_STM32F4XX_NUCLEO -DUSE_IKS01A2 --C99-o .\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_it.o --depend .\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_it.d)
 I (..\Inc\stm32f4xx_it.h)(0x5C6C0D6D)
-I (..\Inc\main.h)(0x5D7F5EC1)
+I (..\Inc\main.h)(0x5D7F81CD)
 I (..\Inc\cube_hal.h)(0x5C6C0D6D)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5C6C0DAF)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5C6C0D6D)
@@ -491,8 +487,6 @@ I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5C6
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo\stm32f4xx_nucleo.h)(0x5C6C0D93)
-I (..\Inc\nucleo_f401re_bus.h)(0x5C6C0D6D)
-I (..\Inc\nucleo_f401re_errno.h)(0x5C6C0D6D)
 I (..\Inc\MotionFX_Manager.h)(0x5C6C0D6D)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F2F9C)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc\motion_fx.h)(0x5C6C0DD2)
@@ -503,7 +497,7 @@ I (..\Inc\MotionFX_Manager.h)(0x5C6C0D6D)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F2F9C)
 I (..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc\motion_fx.h)(0x5C6C0DD2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F2F9E)
-I (..\Inc\main.h)(0x5D7F5EC1)
+I (..\Inc\main.h)(0x5D7F81CD)
 I (..\Inc\cube_hal.h)(0x5C6C0D6D)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5C6C0DAF)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5C6C0D6D)
@@ -542,10 +536,8 @@ I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5C6
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo\stm32f4xx_nucleo.h)(0x5C6C0D93)
-I (..\Inc\nucleo_f401re_bus.h)(0x5C6C0D6D)
-I (..\Inc\nucleo_f401re_errno.h)(0x5C6C0D6D)
-F (..\Src\nucleo_f401re_bus.c)(0x5C6C0D6D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo -I ..\..\..\..\..\..\Drivers\BSP\Components\Common -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\BSP\Components\hts221 -I ..\..\..\..\..\..\Drivers\BSP\Components\lps22hb -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr -I ..\..\..\..\..\..\Drivers\BSP\IKS01A2 -I ..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc -I ..\User --C99-I.\RTE\_STM32F4xx-Nucleo-IKS01A2-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F401xE -DSTM32F401xE -DUSE_HAL_DRIVER -DUSE_STM32F4XX_NUCLEO -DUSE_IKS01A2 --C99-o .\stm32f4xx-nucleo-iks01a2\objects\nucleo_f401re_bus.o --depend .\stm32f4xx-nucleo-iks01a2\objects\nucleo_f401re_bus.d)
-I (..\Inc\nucleo_f401re_bus.h)(0x5C6C0D6D)
+F (..\Src\nucleo_f401re_bus.c)(0x5D7F85C4)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo -I ..\..\..\..\..\..\Drivers\BSP\Components\Common -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\BSP\Components\hts221 -I ..\..\..\..\..\..\Drivers\BSP\Components\lps22hb -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr -I ..\..\..\..\..\..\Drivers\BSP\IKS01A2 -I ..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc -I ..\User --C99-I.\RTE\_STM32F4xx-Nucleo-IKS01A2-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F401xE -DSTM32F401xE -DUSE_HAL_DRIVER -DUSE_STM32F4XX_NUCLEO -DUSE_IKS01A2 --C99-o .\stm32f4xx-nucleo-iks01a2\objects\nucleo_f401re_bus.o --depend .\stm32f4xx-nucleo-iks01a2\objects\nucleo_f401re_bus.d)
+I (..\Inc\nucleo_f401re_bus.h)(0x5D7F85C4)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F2F9E)
 I (..\Inc\nucleo_f401re_errno.h)(0x5C6C0D6D)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5C6C0DAF)
@@ -586,7 +578,7 @@ I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5C6C0DAF)
 F (..\User\i2c.c)(0x5D7CFD77)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo -I ..\..\..\..\..\..\Drivers\BSP\Components\Common -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\BSP\Components\hts221 -I ..\..\..\..\..\..\Drivers\BSP\Components\lps22hb -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr -I ..\..\..\..\..\..\Drivers\BSP\IKS01A2 -I ..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc -I ..\User --C99-I.\RTE\_STM32F4xx-Nucleo-IKS01A2-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F401xE -DSTM32F401xE -DUSE_HAL_DRIVER -DUSE_STM32F4XX_NUCLEO -DUSE_IKS01A2 --C99-o .\stm32f4xx-nucleo-iks01a2\objects\i2c.o --depend .\stm32f4xx-nucleo-iks01a2\objects\i2c.d)
 I (..\User\i2c.h)(0x5D726FDC)
-I (..\Inc\main.h)(0x5D7F5EC1)
+I (..\Inc\main.h)(0x5D7F81CD)
 I (..\Inc\cube_hal.h)(0x5C6C0D6D)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5C6C0DAF)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5C6C0D6D)
@@ -626,8 +618,6 @@ I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5C6
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5C6C0DAF)
 I (..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo\stm32f4xx_nucleo.h)(0x5C6C0D93)
-I (..\Inc\nucleo_f401re_bus.h)(0x5C6C0D6D)
-I (..\Inc\nucleo_f401re_errno.h)(0x5C6C0D6D)
 F (..\User\i2c.h)(0x5D726FDC)()
 F (..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Lib\MotionFX_CM4F_wc16_ot.a)(0x5C6C0DD2)()
 F (..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c)(0x5CB0E32B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo -I ..\..\..\..\..\..\Drivers\BSP\Components\Common -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\BSP\Components\hts221 -I ..\..\..\..\..\..\Drivers\BSP\Components\lps22hb -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm6dsl -I ..\..\..\..\..\..\Drivers\BSP\Components\lsm303agr -I ..\..\..\..\..\..\Drivers\BSP\IKS01A2 -I ..\..\..\..\..\..\Middlewares\ST\STM32_MotionFX_Library\Inc -I ..\User --C99-I.\RTE\_STM32F4xx-Nucleo-IKS01A2-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F401xE -DSTM32F401xE -DUSE_HAL_DRIVER -DUSE_STM32F4XX_NUCLEO -DUSE_IKS01A2 --C99-o .\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal.o --depend .\stm32f4xx-nucleo-iks01a2\objects\stm32f4xx_hal.d)

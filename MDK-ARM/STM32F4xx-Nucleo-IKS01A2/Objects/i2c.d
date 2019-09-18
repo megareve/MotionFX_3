@@ -41,5 +41,3 @@
 .\stm32f4xx-nucleo-iks01a2\objects\i2c.o: ..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h
 .\stm32f4xx-nucleo-iks01a2\objects\i2c.o: ..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h
 .\stm32f4xx-nucleo-iks01a2\objects\i2c.o: ..\..\..\..\..\..\Drivers\BSP\STM32F4xx-Nucleo\stm32f4xx_nucleo.h
-.\stm32f4xx-nucleo-iks01a2\objects\i2c.o: ..\Inc\nucleo_f401re_bus.h
-.\stm32f4xx-nucleo-iks01a2\objects\i2c.o: ..\Inc\nucleo_f401re_errno.h

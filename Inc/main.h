@@ -44,8 +44,8 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "cube_hal.h"
 #ifdef USE_IKS01A2
-#include "nucleo_f401re_bus.h"
-#include "nucleo_f401re_errno.h"
+//#include "nucleo_f401re_bus.h"
+//#include "nucleo_f401re_errno.h"
 //#include "iks01a2_env_sensors.h"
 //#include "iks01a2_env_sensors_ex.h"
 //#include "iks01a2_motion_sensors.h"
